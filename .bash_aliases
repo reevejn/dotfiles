@@ -17,6 +17,6 @@ alias exipr='watch -n 1 wget -qO - icanhazip.com'
 # 	I don't want to type python.exer every time
 alias wp='python.exe'
 
-# Tmux`
+# Tmux
 alias tmus='tmux'
 
