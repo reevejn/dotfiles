@@ -20,3 +20,6 @@ alias wp='python.exe'
 # Tmux
 alias tmus='tmux'
 
+
+# Convienent File-Finding - shows the sizes of everything in the current directory
+alias size='du -ha -d 1'
