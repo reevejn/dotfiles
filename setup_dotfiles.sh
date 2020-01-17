@@ -41,14 +41,20 @@ else
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim | sed "s/^/ /g"
 fi
 
-
-
+# Installing TPM (TMUX plugin manager)
+TPM=~/.tmux/plugins/tpm
+if [ -d "$TPM" ]; then
+    echo -e "\n--> TPM already installed. Skiping..."
+else 
+    echo -e "\n--> Installing TPM (TMUX plugin manager)\n"
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm | sed "s/^/  /g"
+fi
 echo -e "\n--> Reloading Tmux"
 tmux source ~/.tmux.conf
 
 
-#echo -e "--> Installing Plugins\n"
-#source $dir/update.sh
+echo -e "--> Installing Plugins\n"
+source $dir/update.sh
 
 
 echo -e "\nDone"
