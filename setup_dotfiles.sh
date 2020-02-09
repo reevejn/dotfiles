@@ -12,6 +12,9 @@ echo -e "Pulling from Git repo"
 git pull
 cd -
 
+sudo apt-get install tmux
+sudo apt-get install vim
+
 echo -e "\n--> Moving all exiting dotfiles to *.old"
 mv ~/.bashrc ~/.bashrc.old > /dev/null
 #mv ~/.zshrc ~/.zshrc.old > /dev/null
